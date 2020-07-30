@@ -10,19 +10,19 @@ body {
   font-family: var(--font);
   background: hsl(201, 100%, 97%);
 }
-button {
-  font-family: var(--font);
+
+.header__input {
+  background-color: hsl(342, 100%, 92%);
 }
 
-.footer__heading {
-  font-family: Salsa;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: hsl(0, 0%, 0%);
-  transform: rotate(0.04deg);
+.header__button-add {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(209, 81%, 51%);
+  border-radius: 12px;
+}
+
+button {
+  font-family: var(--font);
 }
 
 hr {
@@ -36,23 +36,48 @@ hr {
   );
 }
 
-.header__input {
-  background-color: hsl(342, 100%, 92%);
-}
-
-.header__button-add {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(209, 81%, 51%);
-  border-radius: 12px;
-}
-
 .task {
   background-color: hsl(44, 100%, 90%);
   box-shadow: 5px 10px;
   width: 200px;
+  font-size: 20px;
 }
 
 form,
 .header_input {
   text-align: center;
+}
+
+ul {
+  text-align: center;
+  padding: 5vw 5vw;
+  list-style: none;
+  display: inline-block;
+}
+
+.checkBox {
+  float: center;
+}
+
+.deleteButton > img {
+  width: 25px;
+}
+
+.deleteButton {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: none;
+  outline: none;
+}
+
+.footer__heading {
+  font-family: Salsa;
+  font-style: nitalmal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  transform: rotate(0.04deg);
 }
