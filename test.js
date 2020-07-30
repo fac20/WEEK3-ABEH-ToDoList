@@ -1,6 +1,16 @@
 // Test 1. Add tasks to a list so that I can keep track of them.
 test("Submitting a new task adds it to the list", (t) => {
-  // test goes here
+  //step 1
+  const input = document.querySelector(".header__input");
+  input.value = "change underpants";
+  //step 2
+  const submitButton = document.querySelector(".header__button-add");
+  submitButton.click();
+  //step 3
+  const task = document.querySelector(".taskText");
+  const result = task.textContent;
+  const expected = "change underpants";
+  t.equal(result, expected);
 });
 
 // Test 2. Check things off my list so that I can see what I’ve done.
