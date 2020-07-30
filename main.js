@@ -6,17 +6,25 @@ document.querySelector("form").addEventListener("submit", (event) => {
 // tasks = [task1, task2, ...]
 let taskList = [];
 let completedList = [];
+const clone = task.cloneNode(true);
 
 const task = document.querySelector(".task");
 
 function displayCompleted() {
-  const main = document.querySelector("main");
+  const mainToDolist = document.querySelector("#toDoList");
   const footerCompletedList = document.querySelector("footer__list-completed");
   // remove all items from compleated page section
   footerCompletedList.innerHTML = "";
+  mainToDolist.innerHTML = "";
   //
   for (let i = 0; i < completedList.length; i++) {
-    footerCompletedList.appendChild(completedList[i]);
+    clone.textContent = completedList[i];
+    footerCompletedList.appendChild(clone);
+  }
+
+  for (let y = 0; y < taskList.length; y++) {
+    clone.textContent = taskList[y];
+    mainToDolist.appendChild(clone);
   }
 }
 
