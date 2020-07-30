@@ -8,40 +8,8 @@ test("Submitting a new task adds it to the list", (t) => {
   submitButton.click();
   //step 3
   const task = document.querySelector(".taskText");
-  const result = task.value;
+  const result = task.textContent;
   const expected = "change underpants";
-  t.equal(result, expected);
-});
-
-// step 1 -   // test goes here
-
-// test("Adds item to list", (t) => {
-//   const actual;
-//   const expected;
-//     t.equal(actual, expected, "new task should add to list")
-// })
-
-test("Creates an unordered list", (t) => {
-  const main = document.querySelector("main");
-  const result = main.innerHTML;
-  const expected = '<ul id="toDoList"></ul>';
-  // result === expected
-  //   ? console.info("list item is created")
-  //   : console.error(
-  //       `Expected: <ul id="toDoList"></ul>, Actual: ${main.innerHTML}`
-  //     );
-  t.equal(result, expected);
-});
-
-test("Creates a task item", (t) => {
-  const taskList = document.querySelector(".toDoList");
-  const result = createTask("Create a presentation for work");
-  const expected = `<li class="task"><input type="checkbox" class="checkBox"><p class="taskText">
-                  Create a presentation for work
-                  </p><button class="deleteButton">delete</button></li> `;
-  // result === expected
-  //   ? console.info("task is created")
-  //   : console.error("Task is not created");
   t.equal(result, expected);
 });
 
