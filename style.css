@@ -8,7 +8,30 @@
 
 body {
   font-family: var(--font);
+  background: hsl(201, 100%, 97%);
 }
 button {
   font-family: var(--font);
+}
+
+.footer__heading {
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  transform: rotate(0.04deg);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.75),
+    hsla(0, 0%, 0%, 0)
+  );
 }
