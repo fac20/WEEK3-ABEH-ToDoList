@@ -34,11 +34,9 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
 // Move tasks to Done section in footer when ticked
 // tasks = [task1, task2, ...]
-let taskList = [];
 let completedList = [];
-const clone = task.cloneNode(true);
-
 const task = document.querySelector(".task");
+const clone = task.cloneNode(true);
 
 function displayCompleted() {
   const mainToDolist = document.querySelector("#toDoList");
