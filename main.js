@@ -1,11 +1,14 @@
 let taskList = [];
+const input = document.querySelector(".header__input");
 
 function displayTaskList() {
   const tasks = document.querySelector(".main__tasks-list");
-  for (let i = 0; i < taskList.length; i++) {
-    tasks.appendChild(taskList[i]);
+  tasks.innerHTML = "";
+  for (let i = taskList.length - 1; i > 0; i--) {
+    const clone = taskList[i].cloneNode(true);
+    tasks.appendChild(clone);
   }
-  // clear things from display
+  input.value = "";
 }
 
 function addToList() {
