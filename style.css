@@ -35,3 +35,24 @@ hr {
     hsla(0, 0%, 0%, 0)
   );
 }
+
+.header__input {
+  background-color: hsl(342, 100%, 92%);
+}
+
+.header__button-add {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(209, 81%, 51%);
+  border-radius: 12px;
+}
+
+.task {
+  background-color: hsl(44, 100%, 90%);
+  box-shadow: 5px 10px;
+  width: 200px;
+}
+
+form,
+.header_input {
+  text-align: center;
+}
