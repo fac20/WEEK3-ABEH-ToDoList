@@ -4,7 +4,7 @@ const input = document.querySelector(".header__input");
 function displayTaskList() {
   const tasks = document.querySelector(".main__tasks-list");
   tasks.innerHTML = "";
-  for (let i = taskList.length - 1; i > 0; i--) {
+  for (let i = taskList.length - 1; i >= 0; i--) {
     const clone = taskList[i].cloneNode(true);
     tasks.appendChild(clone);
   }
