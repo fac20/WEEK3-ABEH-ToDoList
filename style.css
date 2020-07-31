@@ -36,10 +36,18 @@ hr {
   );
 }
 
+.main__tasks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .task {
   background-color: var(--sticky-note-colour);
   box-shadow: 0.2rem 0.3rem;
-  width: 6.6rem;
+  min-width: 6rem;
+  padding: 1rem;
+  max-width: 12rem;
   font-size: 0.8rem;
 }
 
@@ -50,7 +58,7 @@ form,
 
 ul {
   text-align: center;
-  padding: 5vw 5vw;
+  padding: 0.5rem;
   list-style: none;
   display: inline-block;
 }
