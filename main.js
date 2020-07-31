@@ -28,10 +28,6 @@ form.addEventListener("submit", (event) => {
   addToList();
 });
 
-document.querySelector("form").addEventListener("submit", (event) => {
-  event.preventDefault();
-});
-
 // Move tasks to Done section in footer when ticked
 // tasks = [task1, task2, ...]
 let completedList = [];
