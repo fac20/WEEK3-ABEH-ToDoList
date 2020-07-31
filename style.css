@@ -1,7 +1,7 @@
 :root {
   --sticky-note-colour: hsl(44, 100%, 90%);
   --background-colour: hsl(201, 100%, 97%);
-  --button-colour: hsl(209, 81%, 51%);
+  --button-colour: hsl(209, 81%, 30%);
   --input-colour: hsl(342, 100%, 92%);
   --font: "Salsa";
 }
