@@ -1,12 +1,12 @@
 // Test 1. Add tasks to a list so that I can keep track of them.
 test("Submitting a new task adds it to the list", (t) => {
-  //step 1
-  const input = document.querySelector(".header__input");
+  //step 1 - select input, assign "change underpants"
+  const input = document.querySelector(".header__input"); 
   input.value = "change underpants";
-  //step 2
+  //step 2 - imitation of submit button click
   const submitButton = document.querySelector(".header__button-add");
   submitButton.click();
-  //step 3
+  //step 3 - compare if underpants value matches input
   const task = document.querySelector(".taskText");
   const result = task.textContent;
   const expected = "change underpants";
@@ -15,10 +15,12 @@ test("Submitting a new task adds it to the list", (t) => {
 
 // Test 2. Check things off my list so that I can see what I’ve done.
 test("Checking an entry marks it as complete", (t) => {
+  // step 1 - select all checkboxes and looping through checkboxes to check if they are checked
   const checkBoxes = document.getElementsByClassName("checkBox");
   for (let i = 0; i < checkBoxes.length; i++) {
     checkBoxes[i].checked = true;
   }
+  // step 2 - comparing if function detects changes in checkbox values
   const result = checkBoxes[0].checked;
   const expected = true;
   t.equal(result, expected);
@@ -26,18 +28,18 @@ test("Checking an entry marks it as complete", (t) => {
 
 // Test 2.5. Check things off my list so that I can see what I’ve done.
 test("Checking an entry moves it to the 'completed' section of the page", (t) => {
-  // step 1
+  // step 1 - checking if checkboxes are checked
   const checkBoxes = document.getElementsByClassName("checkBox");
   checkBoxes[0].checked = true;
-  // step 2
+  // step 2 - checking if function is moving completed tasks to footer
   const footer = document.querySelector("footer");
   const result = footer.contains(checkBoxes[0]);
-  // test
   t.equal(result, true);
 });
 
 // Test 3. Delete things from the list if I don’t need to do them any more
 test("Deleting an entry removes it from the list", (t) => {
+  // incomplete - deleted tasks should be removed from list
   const deletedTasks = document.getElementsByClassName("deleteButton");
   const deletedTask;
   
