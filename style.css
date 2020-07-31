@@ -8,17 +8,17 @@
 
 body {
   font-family: var(--font);
-  background: hsl(201, 100%, 97%);
+  background: var(--background-colour);
 }
 
 .header__input {
-  background-color: hsl(342, 100%, 92%);
+  background-color: var(--input-colour);
 }
 
 .header__button-add {
   color: hsl(0, 0%, 100%);
-  background-color: hsl(209, 81%, 51%);
-  border-radius: 12px;
+  background-color: var(--button-colour);
+  border-radius: 0.4rem;
 }
 
 button {
@@ -27,7 +27,7 @@ button {
 
 hr {
   border: 0;
-  height: 1px;
+  height: 0.04rem;
   background-image: linear-gradient(
     to right,
     hsla(0, 0%, 0%, 0),
@@ -37,10 +37,10 @@ hr {
 }
 
 .task {
-  background-color: hsl(44, 100%, 90%);
-  box-shadow: 5px 10px;
-  width: 200px;
-  font-size: 20px;
+  background-color: var(--sticky-note-colour);
+  box-shadow: 0.2rem 0.3rem;
+  width: 6.6rem;
+  font-size: 0.8rem;
 }
 
 form,
@@ -60,7 +60,7 @@ ul {
 }
 
 .deleteButton > img {
-  width: 25px;
+  width: 0.8rem;
 }
 
 .deleteButton {
@@ -72,12 +72,10 @@ ul {
 }
 
 .footer__heading {
-  font-family: Salsa;
-  font-style: nitalmal;
+  font-family: var(--font);
   font-weight: normal;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
   text-align: center;
   color: hsl(0, 0%, 0%);
-  transform: rotate(0.04deg);
 }
